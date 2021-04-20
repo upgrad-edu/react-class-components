@@ -6,6 +6,9 @@ class AddSubscriber extends Component {
     return (
         <div className="component-container">
             <Header heading="Add Subscriber"/>
+            <div className="component-body-container">
+                <button className="custom-btn">Back</button>
+            </div>
         </div>
     )
   }
