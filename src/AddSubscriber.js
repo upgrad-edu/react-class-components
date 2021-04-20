@@ -24,6 +24,7 @@ class AddSubscriber extends Component {
                         <span className="subscriber-info">Phone: </span>
                     </div>
 
+                    <button type="submit" className="custom-btn add-btn">Add</button>
                 </form>
             </div>
         </div>
