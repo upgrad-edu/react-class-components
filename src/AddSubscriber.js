@@ -1,10 +1,12 @@
 import React, {Component} from 'react';
+import Header from './common/Header';
 
 class AddSubscriber extends Component {
   render() {
     return (
-      <div>
-      </div>
+        <div className="component-container">
+            <Header heading="Add Subscriber"/>
+        </div>
     )
   }
 }
