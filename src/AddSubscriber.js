@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import Header from './common/Header';
 import './common/common.css';
+import './AddSubscriber.css';
 
 class AddSubscriber extends Component {
   render() {
