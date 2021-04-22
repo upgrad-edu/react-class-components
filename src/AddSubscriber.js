@@ -21,6 +21,9 @@ class AddSubscriber extends Component {
   }
 
   render() {
+
+    const {name, phone} = this.state;
+    
     return (
         <div className="component-container">
 
