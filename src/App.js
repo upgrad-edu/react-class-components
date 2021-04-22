@@ -4,6 +4,15 @@ import './App.css';
 import './common/common.css';
 
 class App extends Component {
+  
+  constructor(props) {
+    super(props);
+    this.state = {
+      subscribersListToShow: []
+    };
+    console.log("Constructor called!");
+  }
+  
   render() {
     // let subscribers = [
     //   {
@@ -17,7 +26,7 @@ class App extends Component {
     //     phone: "9999999999"
     //   }
     // ];
-  
+      
     return (
       <div>
         <Header heading="Phone Directory"/>
@@ -29,7 +38,7 @@ class App extends Component {
           </div>
 
           {
-            subscribers.map(sub => {
+            this.state.subscribersListToShow.map(sub => {
               return <div key={sub.id} className="grid-container">
                 <span className="grid-item">{sub.name}</span>
                 <span className="grid-item">{sub.phone}</span>
