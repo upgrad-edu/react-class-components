@@ -13,6 +13,18 @@ class App extends Component {
     console.log("Constructor called!");
   }
   
+  componentDidMount() {
+    console.log("componentDidMount called!");
+    let newSubscriber = {
+      id: 1,
+      name: "Shilpa Bhat",
+      phone: "8888888888"
+    }
+    let subscribersList = this.state.subscribersListToShow;
+    subscribersList.push(newSubscriber);
+    this.setState({ subscribersListToShow: subscribersList });
+  }
+
   render() {
     // let subscribers = [
     //   {
