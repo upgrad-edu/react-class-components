@@ -26,6 +26,7 @@ class App extends Component {
   }
 
   render() {
+    console.log("Render called!");
     // let subscribers = [
     //   {
     //     id: 1,
