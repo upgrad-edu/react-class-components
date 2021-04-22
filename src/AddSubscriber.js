@@ -4,6 +4,16 @@ import './common/common.css';
 import './AddSubscriber.css';
 
 class AddSubscriber extends Component {
+  
+  constructor() {
+      super();
+      this.state = {
+          id: 0,
+          name: '',
+          phone: ''
+      }
+  }  
+  
   render() {
     return (
         <div className="component-container">
