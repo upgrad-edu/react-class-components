@@ -23,7 +23,7 @@ class AddSubscriber extends Component {
   render() {
 
     const {name, phone} = this.state;
-    
+
     return (
         <div className="component-container">
 
@@ -39,8 +39,8 @@ class AddSubscriber extends Component {
                 
                     <div className="subscriber-info-container">
                         <span className="subscriber-to-add-heading">Subscriber to be added:</span><br />
-                        <span className="subscriber-info">Name: </span><br />
-                        <span className="subscriber-info">Phone: </span>
+                        <span className="subscriber-info">Name: {name}</span><br />
+                        <span className="subscriber-info">Phone: {phone}</span>
                     </div>
 
                     <button type="submit" className="custom-btn add-btn">Add</button>
