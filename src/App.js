@@ -5,18 +5,18 @@ import './common/common.css';
 
 class App extends Component {
   render() {
-    let subscribers = [
-      {
-        id: 1,
-        name: "Shilpa Bhat",
-        phone: "8888888888"
-      },
-      {
-        id: 2,
-        name: "Srishti Gupta",
-        phone: "9999999999"
-      }
-    ];
+    // let subscribers = [
+    //   {
+    //     id: 1,
+    //     name: "Shilpa Bhat",
+    //     phone: "8888888888"
+    //   },
+    //   {
+    //     id: 2,
+    //     name: "Srishti Gupta",
+    //     phone: "9999999999"
+    //   }
+    // ];
   
     return (
       <div>
