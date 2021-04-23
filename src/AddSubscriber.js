@@ -24,6 +24,7 @@ class AddSubscriber extends Component {
   onFormSubmitted = (e) => {
     e.preventDefault();
     this.props.addSubscriberHandler(this.state);
+    this.props.history.push("/");
   }
 
 

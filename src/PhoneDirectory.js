@@ -32,7 +32,6 @@ class PhoneDirectory extends Component {
         }
         subscribersList.push(newSubscriber);
         this.setState({ subscribersList: subscribersList });
-        console.log(this.state.subscribersList);
     }
     
     render() {
@@ -41,8 +40,7 @@ class PhoneDirectory extends Component {
             <Router>
                 <div>
                     <Route exact path="/" render={(props) => <ShowSubscribers {...props} subscribersList={this.state.subscribersList} />} />
-                    <Route exact path="/add" render={({history}, props) => <AddSubscriber history={history} {...props} addSubscriberHandler={this.addSubscriberHandler} />} />
-                </div>
+                    <Route path='/add' render={({history}, props) => <AddSubscriber {...props} history={history} addSubscriberHandler={this.addSubscriberHandler.bind(this)} /> } />                </div>
             </Router>
         )
     }
