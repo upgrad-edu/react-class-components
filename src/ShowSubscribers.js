@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import Header from './common/Header';
-import './App.css';
+import './ShowSubscribers.css';
 import './common/common.css';
 
-class App extends Component {
+class ShowSubscribers extends Component {
   
   constructor(props) {
     super(props);
@@ -56,4 +56,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default ShowSubscribers;
