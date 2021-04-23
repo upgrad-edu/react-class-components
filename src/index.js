@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import ShowSubscribers from './ShowSubscribers';
+import PhoneDirectory from './PhoneDirectory';
 
-ReactDOM.render(<ShowSubscribers/>, document.getElementById('root'));
+ReactDOM.render(<PhoneDirectory/>, document.getElementById('root'));
 reportWebVitals();
