@@ -23,7 +23,7 @@ class PhoneDirectory extends Component {
     
     render() {
        return (
-           <AddSubscriber />
+        <AddSubscriber addSubscriberHandler={this.addSubscriberHandler.bind(this)} />
        )
    }
 }
