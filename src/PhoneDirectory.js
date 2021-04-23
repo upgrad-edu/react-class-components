@@ -1,7 +1,15 @@
 import React, { Component } from 'react';
 
 class PhoneDirectory extends Component {
-   render() {
+    constructor() {
+        super();
+     
+        this.state = {
+           subscribersList: []
+        };
+    }
+    
+    render() {
        return (
            <AddSubscriber />
        )
