@@ -24,11 +24,12 @@ class PhoneDirectory extends Component {
     }
     
     render() {
-       return (
-        // <AddSubscriber addSubscriberHandler={this.addSubscriberHandler.bind(this)} />
-        <ShowSubscribers />
-       )
-   }
+        const subscribersList = this.state.subscribersList;
+        return (
+            // <AddSubscriber addSubscriberHandler={this.addSubscriberHandler.bind(this)} />
+            <ShowSubscribers subscribersList={subscribersList} />
+        )
+    }
 }
 
 export default PhoneDirectory;
