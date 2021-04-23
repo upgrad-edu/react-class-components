@@ -25,7 +25,8 @@ class PhoneDirectory extends Component {
     
     render() {
        return (
-        <AddSubscriber addSubscriberHandler={this.addSubscriberHandler.bind(this)} />
+        // <AddSubscriber addSubscriberHandler={this.addSubscriberHandler.bind(this)} />
+        <ShowSubscribers />
        )
    }
 }
